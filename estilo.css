@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+    font-style: normal;
+}
+
+html {
+    height: auto;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between; /* Ajusta o espaço entre os elementos */
+    align-items: flex-start; /* Alinha os itens no início */
+  }
+
+section.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    
+}
+
+.carrossel img {
+    display: block;
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.carrossel .slide {
+    width: 100%;
+    display: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 1000; /* Adiciona um z-index alto para garantir que o cabeçalho fique acima do carrossel */
+}
+
+section.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; /* Define um z-index inferior ao cabeçalho para garantir que o carrossel fique atrás */
+}
+
+
+header a {
+    color: #fff;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);   
+}
+
+header.rolagem {
+    background-color: green;
+    padding: 20px 4%;
+}
+
+header.rolagem a {
+    color: #fff;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    color: green;
+    font-size: 4em;
+}
+
+.btn-contato button {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff; 
+    background-color: green;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+    align-items: center;
+}
+
+section.formulario {
+    padding: 80px 4%;
+    color: green;
+    
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: antiquewhite;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bolder;
+}
+
+form textarea {
+    resize: none;
+}
+
+form .btnenviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btnenviar input {
+    width: 120px;
+    cursor: pointer;
+    color: #000;
+}
+
+form h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+section.formulario {
+    color: green;
+}
+footer{
+    text-align: center;
+}
+
+section.toposite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+}
+.custom-carousel-img {
+    width: 50%;
+   
+}
+.txttoposite {
+    max-width: 700px;
+    text-align: center;
+    margin-right: 40px;
+    -webkit-text-stroke: #000;
+}
+
+.txttoposite h1 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.txttoposite p {
+    font-size: 1.5em;
+    color: white;
+    max-width: 700px;
+}
+
+.imgtoposite img {
+    max-width: 800px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 60px;
+    border-radius: 18px;
+}
+
+section.formulario,
+section.carrossel {
+    background-color: green;
+    padding: px 0;
+}
+
+section.formulario {
+    color:green;
+}
+
+section.carrossel {
+    height: auto;
+    padding: 40px 0;
+}
+
+section.sobrenos {
+    background-color: green;
+    color: #fff;
+    padding: 60px 4%;
+}
+
+section.sobrenos .apresentacao {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+section.sobrenos .txttoposite {
+    flex: 1;
+}
+
+section.sobrenos .txttoposite h1,
+section.sobrenos .txttoposite p {
+    margin: 0 0 10px;
+}
+
+section.sobrenos .txttoposite img.imgsobre {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    section.sobrenos .apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.sobrenos .txttoposite img.imgsobre {
+        margin-bottom: 20px;
+    }
+}
+
+/* CSS para o efeito de fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 10s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Estilo para o contêiner principal que organiza a seção "Sobre Nós" e o carrossel lado a lado */
+section.principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 4%;
+    gap: 20px;
+}
+
+.carrossel {
+    flex: 1;
+    max-width: 50%;
+}
+
+.carousel-item img {
+    height: auto;
+    max-height: 400px;
+}
+
+.sobre-e-carrossel {
+    display: flex;
+    background-color: green;
+    padding: 40px 0;
+}
+
+.sobre-e-carrossel .sobrenos {
+    flex: 1;
+    padding: 20px;
+}
+
+.sobre-e-carrossel .carrossel {
+    flex: 1;
+    padding: 20px;
+}
+
+.sobrenos {
+    background-color:green;
+    padding: 40px 20px;
+}
+
+.sobrenos .txttoposite {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobrenos .imgsobre {
+    max-width: 60%;
+    height: auto;
+}
+
+.mapa{
+    max-width: 100%;
+    background-color: #69353F;
+}
+
+.localizacao {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px; /* Espaço interno da seção */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
+    border-radius: 1;
+}
+
+.localizacao-conteudo {
+    display: flex; /* Flexbox para layout em linha */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    gap: 20px; /* Espaço entre o texto e o mapa */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+}
+.texto {
+    flex: 1;
+    max-width: 45%; /* Ajusta a largura máxima do texto */
+    margin-right: 20px; /* Espaço à direita do texto */
+}
+
+.texto h1 {
+    font-size: 2.5rem; /* Ajusta o tamanho do título */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+.texto p {
+    font-size: 1rem; /* Tamanho da fonte do parágrafo */
+}
+.mapa {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+iframe {
+    width: 100%;
+    height: 500px; /* Ajuste a altura se necessário */
+    border: none;
+}
+
+/* Estilo para os ícones sociais */
+/* Estilo para os ícones sociais */
+.icon {
+    display: flex; /* Flexbox para os ícones */
+    justify-content: center; /* Alinha os ícones horizontalmente no centro */
+    gap: 15px; /* Espaço entre os ícones */
+    margin-top: 20px; /* Espaço acima dos ícones */
+}
+
+.icon img {
+    width: 40px; /* Largura dos ícones */
+    height: 40px; /* Altura dos ícones */
+    object-fit: contain; /* Garante que o ícone mantenha sua proporção */
+    transition: transform 0.3s; /* Animação ao passar o mouse */
+}
+
+.icon img:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Adapta o tamanho dos ícones para telas menores */
+@media (max-width: 768px) {
+    .icon img {
+        width: 30px; /* Tamanho menor dos ícones para dispositivos móveis */
+        height: 30px; /* Tamanho menor dos ícones para dispositivos móveis */
+    }
+}
+.mapa iframe {
+    width: 100%; /* Largura total do contêiner */
+    height: 400px; /* Altura do mapa */
+    border: none; /* Remove a borda do iframe */
+}
+
+/* Estilo para o card menor */
+/* Estilo para o card */
+.card {
+    width: 300px; /* Ajusta a largura do card */
+    margin: 20px auto; /* Centraliza o card horizontalmente */
+    text-align: center; /* Centraliza o conteúdo do card */
+    background-color: #fff; /* Cor de fundo do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para efeito de profundidade */
+    border-radius: 12px; /* Bordas arredondadas */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse as bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+/* Ajusta a imagem do card */
+.card .card-img-top {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho sem distorcer */
+    border-bottom: 2px solid #e0e0e0; /* Adiciona uma borda sutil abaixo da imagem */
+}
+
+/* Estilo para o corpo do card */
+.card-body {
+    padding: 15px; /* Espaçamento interno */
+}
+
+/* Título do card */
+.card-title {
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: #333; /* Cor do texto */
+}
+
+.card-text {
+    font-size: 14px; 
+    color: #555; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .fade-in.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  section.especialidades {
+    background-color: green; /* Cor de fundo vinho */
+    color: #fff;
+    padding: 40px 4%;
+    text-align: center;
+    align-items: center;
+}
+
+.especialidades .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px;
+}
+section.especialidades,
+section.formulario {
+    height: auto; /* Ajuste a altura conforme necessário */
+}
+
+  h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+  }
+  .especialidadesbox {
+    flex: 1; /* Faz com que a caixa de especialidades ocupe o máximo de espaço possível */
+    padding: 20px;
+    background-color: #f8f9fa; /* Ajuste a cor de fundo se necessário */
+  }
+  .especialidades.especialidadesbox i{
+    font-size: 70px;
+  }
+
+
+
+
+@media (max-width: 768px) {
+    .especialidades {
+        width: 100%;
+    }
+}
+
+.especialidadesbox {
+    background-color: #fff;
+    color: green;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 300px; 
+    text-align: center;
+}
+
+.especialidadesbox i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.especialidadesbox h3 {
+    margin: 10px 0;
+}
+
+.especialidadesbox p {
+    font-size: 0.9rem;
+}
+
+
+.imagem-advogato {
+    flex: 0 0 auto; /* Não permite que a imagem ocupe mais espaço que o necessário */
+    padding: 20px;
+  }
+  .imagem-advogato img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da div */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+  section.imagem-advogato{
+    background-color:green;
+    width: 100%;
+    position:absolute;
+  }
